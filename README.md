@@ -2,7 +2,7 @@
 
 An end-to-end machine learning project for predicting residential house prices using the Ames Housing dataset.
 
-The project covers the complete machine learning workflow, from data exploration and preprocessing to model comparison, hyperparameter tuning, feature importance, error analysis and API deployment.
+The project covers the complete machine learning workflow, from data exploration and preprocessing to model comparison, hyperparameter tuning, feature importance, error analysis.
 
 ---
 
