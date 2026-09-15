@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction using Machine Learning
+# House Price Prediction using Machine Learning
 
 An end-to-end machine learning project for predicting residential house prices using the Ames Housing dataset.
 
@@ -6,7 +6,7 @@ The project covers the complete machine learning workflow, from data exploration
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The goal of this project is to build a machine learning system that can estimate the selling price of a residential property based on its characteristics.
 
@@ -24,7 +24,7 @@ The dataset contains information such as:
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 The project uses the Ames Housing dataset.
 
@@ -37,7 +37,7 @@ The target variable, `SalePrice`, represents the selling price of the house.
 
 ---
 
-## 🔎 Exploratory Data Analysis
+## Exploratory Data Analysis
 
 The project includes exploratory analysis of:
 
@@ -53,7 +53,7 @@ The `SalePrice` distribution was positively skewed, so target transformations we
 
 ---
 
-## ⚙️ Data Preprocessing
+## Data Preprocessing
 
 The preprocessing workflow includes:
 
@@ -80,7 +80,7 @@ The `Id` column was also removed because it is an identifier rather than a meani
 
 ---
 
-## 🔄 Target Transformation
+## Target Transformation
 
 Two target transformations were evaluated:
 
@@ -93,7 +93,7 @@ The log transformation produced the stronger overall results and was selected fo
 
 ---
 
-## 🤖 Models Evaluated
+## Models Evaluated
 
 ### Baseline Models
 
@@ -115,7 +115,7 @@ The models were compared using 5-fold cross-validation.
 
 ---
 
-## 🏆 Model Selection and Hyperparameter Tuning
+## Model Selection and Hyperparameter Tuning
 
 The strongest advanced candidates were selected for further tuning.
 
@@ -130,7 +130,7 @@ CatBoost produced the strongest cross-validation performance among the tuned can
 
 ---
 
-## 📈 Final Model Performance
+## Final Model Performance
 
 The final CatBoost model was evaluated on the held-out test set.
 
@@ -152,7 +152,7 @@ The test set was kept separate from model selection and hyperparameter tuning an
 
 ---
 
-## 🔍 Feature Importance
+## Feature Importance
 
 Feature-importance analysis showed that the following features were among the strongest price drivers:
 
@@ -168,7 +168,7 @@ Feature-importance analysis showed that the following features were among the st
 
 ---
 
-## 🧪 Error Analysis
+## Error Analysis
 
 The project also examines individual prediction errors and groups prediction performance by price range.
 
@@ -178,23 +178,3 @@ This highlights an important limitation of the current model and provides direct
 
 ---
 
-## 🚀 API Deployment
-
-The trained machine learning pipeline is saved using Joblib and exposed through a FastAPI application.
-
-### Available endpoints
-
-#### `GET /`
-
-Checks whether the API is running.
-
-#### `POST /predict`
-
-Accepts house features and returns the predicted sale price.
-
-Example response:
-
-```json
-{
-    "predicted_sale_price": 250000.00
-}
